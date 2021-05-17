@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodSpin</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="page">
+        <header class="page__header header container">
+            <!-- menu for mobile-->
+            <div class="header__dropdown dropdown">
+                <nav>
+                    <ul class="dropdown__nav-list">
+                        <li class="dropdown__nav-item"><a href="#">Breakfast</a></li>
+                        <li class="dropdown__nav-item"><a href="#">lunch</a></li>
+                        <li class="dropdown__nav-item"><a href="#">Dinner</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!---->
+            <a href="#" class="header__logo">
+                <img src="images/logo.svg" alt="logo" width="105" height="27">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#">Breakfast</a></li>
+                    <li class="header__nav-item"><a href="#">lunch</a></li>
+                    <li class="header__nav-item"><a href="#">Dinner</a></li>
+                </ul>
+            </nav>
+            <svg class="header__menu-icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
+                <g>
+                    <g>
+                        <path
+                            d="M492,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,236,492,236z" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path
+                            d="M492,76H20C8.954,76,0,84.954,0,96s8.954,20,20,20h472c11.046,0,20-8.954,20-20S503.046,76,492,76z" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path d="M492,396H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h472c11.046,0,20-8.954,20-20
+			C512,404.954,503.046,396,492,396z" />
+                    </g>
+                </g>
+            </svg>
+            <a href="#" class="header__basket">
+                <svg width="18" height="21" viewBox="0 0 18 21" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4 7V5C4 3.67392 4.52678 2.40215 5.46447 1.46447C6.40215 0.526784 7.67392 0 9 0C10.3261 0 11.5979 0.526784 12.5355 1.46447C13.4732 2.40215 14 3.67392 14 5V7H17C17.2652 7 17.5196 7.10536 17.7071 7.29289C17.8946 7.48043 18 7.73478 18 8V20C18 20.2652 17.8946 20.5196 17.7071 20.7071C17.5196 20.8946 17.2652 21 17 21H1C0.734784 21 0.48043 20.8946 0.292893 20.7071C0.105357 20.5196 0 20.2652 0 20V8C0 7.73478 0.105357 7.48043 0.292893 7.29289C0.48043 7.10536 0.734784 7 1 7H4ZM4 9H2V19H16V9H14V11H12V9H6V11H4V9ZM6 7H12V5C12 4.20435 11.6839 3.44129 11.1213 2.87868C10.5587 2.31607 9.79565 2 9 2C8.20435 2 7.44129 2.31607 6.87868 2.87868C6.31607 3.44129 6 4.20435 6 5V7Z" />
+                </svg>
+            </a>
+        </header>
+        <main class="main main_bg_orange container">
+
+            <div class="active-area">
+
+                <div class="active-area__body">
+                    <div class="circle-menu">
+                        <div class="circle-menu__container">
+                            <div class="circle-menu__body">
+                                <img data-num="0" src="images/dish__1.png" alt="Green Goddess Chicken Salad"
+                                    class="circle-menu__dish circle-menu__dish_active" width="97" height="99">
+                                <img data-num="1" src="images/dish__2.png" alt="Asian Cucumber Salad" class="circle-menu__dish" width="97" height="99">
+                                <img data-num="2" src="images/dish__3.png" alt="Salmon with Tomato" class="circle-menu__dish" width="97" height="99">
+                                <img data-num="3" src="images/dish__4.png" alt="Radicchio Salad with Citrus" class="circle-menu__dish" width="97" height="99">
+                                <img data-num="4" src="images/dish__5.png" alt="Marsala Glazed Mushrooms" class="circle-menu__dish" width="97" height="99">
+                                <img data-num="5" src="images/dish__1.png" alt="Green Goddess Chicken Salad" class="circle-menu__dish" width="97" height="99">
+                                <img data-num="6" src="images/dish__2.png" alt="Asian Cucumber Salad" class="circle-menu__dish" width="97" height="99">
+                                <img data-num="7" src="images/dish__3.png" alt="Salmon with Tomato" class="circle-menu__dish" width="97" height="99">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="active-area__dish-switch dish-switch">
+                    <button class="dish-switch__btn dish-switch__btn_dir_left">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L13 7M7 13L1 7M7 13V1" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <ul class="dish-switch__list">
+                        <li><img data-num="0" src="images/dish__1.png" alt="Green Goddess Chicken Salad"
+                                class="dish-switch__item dish-switch__item_active" width="289" height="295"></li>
+                        <li><img data-num="1" src="images/dish__2.png" alt="Asian Cucumber Salad" class="dish-switch__item" width="289" height="295"></li>
+                        <li><img data-num="2" src="images/dish__3.png" alt="Salmon with Tomato" class="dish-switch__item" width="289" height="295"></li>
+                        <li><img data-num="3" src="images/dish__4.png" alt="Radicchio Salad with Citrus" class="dish-switch__item" width="289" height="295"></li>
+                        <li><img data-num="4" src="images/dish__5.png" alt="Marsala Glazed Mushrooms" class="dish-switch__item" width="289" height="295"></li>
+                        <li><img data-num="5" src="images/dish__1.png" alt="Green Goddess Chicken Salad" class="dish-switch__item" width="289" height="295"></li>
+                        <li><img data-num="6" src="images/dish__2.png" alt="Asian Cucumber Salad" class="dish-switch__item" width="289" height="295"></li>
+                        <li><img data-num="7" src="images/dish__3.png" alt="Salmon with Tomato" class="dish-switch__item" width="289" height="295"></li>
+                    </ul>
+                    <button class="dish-switch__btn dish-switch__btn_dir_right">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L13 7M7 13L1 7M7 13V1" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <ul class="main__cards">
+                <li class="card card_active" data-num="0">
+                    <p class="card__price">$32</p>
+                    <h2 class="card__name">Green Goddess Chicken Salad</h2>
+                    <p class="card__description">It is a non vegetarian salad which consists of the green goddess
+                        dressing mixed with chicken, peppers, olives and celery. </p>
+                    <button class="card__btn">ORDER NOW</button>
+                </li>
+                <li class="card" data-num="1">
+                    <p class="card__price">$35</p>
+                    <h2 class="card__name">Asian Cucumber Salad</h2>
+                    <p class="card__description">Asian Cucumber Salad Recipe made with crunchy cucumber, onion, rice
+                        wine vinegar, and a few secret ingredients!</p>
+                    <button class="card__btn">ORDER NOW</button>
+                </li>
+                <li class="card" data-num="2">
+                    <p class="card__price">$42</p>
+                    <h2 class="card__name">Salmon with Tomato</h2>
+                    <p class="card__description">Salmon fillets poached in a tomato onion caper sauce with white
+                        wine.</p>
+                    <button class="card__btn">ORDER NOW</button>
+                </li>
+                <li class="card" data-num="3">
+                    <p class="card__price">$30</p>
+                    <h2 class="card__name">Radicchio Salad with Citrus</h2>
+                    <p class="card__description">This bitter, peppery salad with its pop of bright, refreshing
+                        citrus will satisfy your craving for sunshine.</p>
+                    <button class="card__btn">ORDER NOW</button>
+                </li>
+                <li class="card" data-num="4">
+                    <p class="card__price">$32</p>
+                    <h2 class="card__name">Marsala Glazed Mushrooms</h2>
+                    <p class="card__description">Marsala Glazed Mushrooms are a vegetarian delight that even a
+                        die-hard meat eater will enjoy!</p>
+                    <button class="card__btn">ORDER NOW</button>
+                </li>
+                <li class="card" data-num="5">
+                    <p class="card__price">$32</p>
+                    <h2 class="card__name">Green Goddess Chicken Salad</h2>
+                    <p class="card__description">It is a non vegetarian salad which consists of the green goddess
+                        dressing mixed with chicken, peppers, olives and celery. </p>
+                    <button class="card__btn">ORDER NOW</button>
+                </li>
+                <li class="card" data-num="6">
+                    <p class="card__price">$35</p>
+                    <h2 class="card__name">Asian Cucumber Salad</h2>
+                    <p class="card__description">Asian Cucumber Salad Recipe made with crunchy cucumber, onion, rice
+                        wine vinegar, and a few secret ingredients!</p>
+                    <button class="card__btn">ORDER NOW</button>
+                </li>
+                <li class="card" data-num="7">
+                    <p class="card__price">$42</p>
+                    <h2 class="card__name">Salmon with Tomato</h2>
+                    <p class="card__description">Salmon fillets poached in a tomato onion caper sauce with white
+                        wine.</p>
+                    <button class="card__btn">ORDER NOW</button>
+                </li>
+            </ul>
+
+        </main>
+    </div>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

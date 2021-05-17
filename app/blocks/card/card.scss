@@ -1,0 +1,93 @@
+.card {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 321px;
+    transition: all 0.3s;
+
+    &__price {
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 66px;
+        color: $orange;
+        margin: 0;
+        max-width: 100%;
+
+        @media screen and (max-width: 948px) {
+            font-size: 34px;
+            line-height: 56px;
+        }
+    }
+
+    &__name {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 50px;
+        text-transform: capitalize;
+        color: $gray;
+        margin: 0;
+        max-width: 100%;
+
+        @media screen and (max-width: 948px) {
+            font-size: 26px;
+            line-height: 40px;
+        }
+    }
+
+    &__description {
+        font-size: 13px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: $gray;
+        margin-bottom: 12px;
+        max-width: 100%;
+
+        @media screen and (max-width: 948px) {
+            line-height: 16px;
+        }
+    }
+
+    &__btn {
+        width: 163px;
+        height: 48px;
+        background: $orange;
+        box-shadow: 0px 20px 40px #f4e2d1;
+        border-radius: 69px;
+        border: none;
+        margin-top: 28px;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 19px;
+        text-transform: capitalize;
+        color: $white;
+        outline: none;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    &_active {
+        display: flex;
+        animation-name: cardSwitch;
+        animation-duration: 0.3s;
+    }
+
+    @media screen and (max-width: 768px) {
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        min-height: initial;
+    }
+}
+
+@keyframes cardSwitch {
+    0% {
+        transform: scale(0.7);
+        opacity: 0.1;
+    }
+
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}

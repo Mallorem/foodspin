@@ -1,0 +1,52 @@
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .active-area__body {
+        background-color: $light-orange;
+        transition: background-color 0.2s;
+    }
+
+    &__cards {
+        position: absolute;
+        top: 20%;
+        max-width: 33%;
+    
+        @media screen and (max-width: 768px) {
+            top: 0;
+            max-width: calc(100% - 40px);
+            width: calc(100% - 40px);
+            margin-top: calc(25% + 300px);
+            padding-bottom: 20px;
+        }
+    
+        @media screen and (max-width: 425px) {
+            position: relative;
+            margin-top: 0;
+            max-width: 100%;
+            width: 100% ;
+        }
+    }
+
+    &_bg-green {
+        .active-area__body {
+            background-color: $light-green;
+            transition: background-color 0.2s;
+        }
+
+        .card__price {
+            color: $green;
+        }
+
+        .card__btn {
+            background-color: $green;
+        }
+
+        .dish-switch__btn {
+            background-color: $green;
+        }
+    }
+}

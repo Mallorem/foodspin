@@ -1,0 +1,37 @@
+.dropdown {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    text-transform: capitalize;
+
+    &::after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        transform: rotate(225deg);
+        position: absolute;
+        bottom: -5px;
+        left: 125px;
+        background: rgb(255, 255, 255);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+        top: -5px;
+        bottom: initial;
+        transform: rotate(45deg);
+    }
+
+    &_state_active {
+        width: calc(100% - 80px);
+        padding: 15px;
+        height: auto;
+        visibility: visible;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+}
