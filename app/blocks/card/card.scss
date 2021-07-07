@@ -50,7 +50,7 @@
     &__btn {
         width: 163px;
         height: 48px;
-        background: $orange;
+        background-color: $orange;
         box-shadow: 0px 20px 40px #f4e2d1;
         border-radius: 69px;
         border: none;
@@ -63,6 +63,15 @@
         outline: none;
         cursor: pointer;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        transition: background-color, transform 0.3s;
+
+        &:hover {
+            background-color: $dark-orange;
+        }
+        
+        &:active {
+            transform: scale(1.1);
+        }
     }
 
     &_active {

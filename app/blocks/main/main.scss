@@ -43,10 +43,18 @@
 
         .card__btn {
             background-color: $green;
+
+            &:hover {
+                background-color: $dark-green;
+            }
         }
 
         .dish-switch__btn {
             background-color: $green;
+
+            &:hover {
+                background-color: $dark-green;
+            }
         }
     }
 }
