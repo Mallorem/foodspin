@@ -4,9 +4,10 @@
     height: 0;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
     flex-direction: column;
-    background: rgb(255, 255, 255);
+    background-color: transparent;
     border-radius: 4px;
     text-transform: capitalize;
+    transition: background-color 0.3s ease 0s;
 
     &::after {
         content: "";
@@ -16,7 +17,7 @@
         position: absolute;
         bottom: -5px;
         left: 125px;
-        background: rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
         border-top: 1px solid rgba(0, 0, 0, 0.1);
         border-left: 1px solid rgba(0, 0, 0, 0.1);
         top: -5px;
@@ -29,6 +30,7 @@
         padding: 15px;
         height: auto;
         visibility: visible;
+        background: rgb(255, 255, 255);
 
         @media screen and (min-width: 768px) {
             display: none;
